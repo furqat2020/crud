@@ -1,0 +1,9 @@
+<div>
+    <h3 class="mt-4"><%= title %></h3>
+    <ul class="list-group m-4 list-group-flush">
+        <li class="list-group-item bg-secondary text-white">Maqolalar</li>
+        <% data.map(item => { %>
+            <li class="list-group-item"><h4><a style="text-decoration: none;" href="/maqola/<%= item._id %>"><%= item.title %></a></h4></li>
+        <% }) %>    
+    </ul>
+</div>

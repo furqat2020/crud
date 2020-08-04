@@ -1,0 +1,8 @@
+<div>
+    <ul class="list-group list-group-flush m-3">
+        <li class="list-group-item"><h1> <%= data.title %></h1></li>    
+        <li class="list-group-item"><code>Avtor: </code> <span class="ml-1" style="font-size: 30px;"> <%= data.author %></span></li>    
+        <li class="list-group-item"><code>Text: </code> <i class="ml-1" style="font-size: 18px;"> <%= data.body %></i></li>    
+        <li class="list-group-item"><a href="/maqola/edit/<%= data._id %>" class="btn btn-outline-info btn-sm">Edit</a> <a href="#" data-id="<%= data._id %>" id="del" class="btn btn-outline-danger btn-sm">Delete</a></li>
+    </ul>
+</div>
