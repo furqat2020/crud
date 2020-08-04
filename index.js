@@ -76,14 +76,14 @@ app.post('/maqola/edit/:id', (req, res) => {
     })
 })
 
-app.delete('/maqola/:id', (req, res) => [
+app.delete('/maqola/:id', (req, res) => {
     Article.deleteOne({_id:req.params.id}, (err) => {
         if(err) throw err
         else {
             res.send('Success')
         }
     })
-])
+})
 
 app.listen(app.get('port'), () => {
     console.info(`Server Port:${app.get('port')} da ishga tushdi...`)
