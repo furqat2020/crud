@@ -6,7 +6,7 @@ mongoose = require('mongoose'),
 app = express()
 let Article = require('./models/article')
 
-mongoose.connect('mongodb://localhost/nodekb', {useNewUrlParser:true, useUnifiedTopology:true})
+mongoose.connect('mongodb://localhost/nodeCrud', {useNewUrlParser:true, useUnifiedTopology:true})
 mongoose.connection.on('open', () => {
     console.info("Baza bilan ulandi")
 })
